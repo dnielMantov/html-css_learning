@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Usa-se o seguinte código acima para adicionar um ícone a uma página. -->
+    <title>Parágrafos</title>
+</head>
+<body>
+    <h1> Formatações de Texto </h1> 
+    <hr>
+    <p>
+        teste
+        <br>
+        de paragrafo
+        <br>
+        quebrado
+    </p>
+    <p>
+        inserindo caracteres especiais &euro; &delta; &Delta; &uparrow; &lt; &gt;
+    </p>
+    <p>
+        inserindo emoji com UTF-8 e hexa &#x1F47D; 👽
+    </p>
+    <img src="images/DT2639.jpg" alt="Imagem Paisagem">
+    <!-- alt significa texto alternativo que acompanha a imagem -->
+    <h3>Negrito</h1>
+    <p>
+        teste de <strong>negrito com 'strong'</strong>
+        <br>
+        teste de <b>negrito com 'b'</b> (não semântico)
+        <!--A diferença é semântica, ou seja, de significado. Quando você usa STRONG, você dá um significado para aquela parte especifica do texto. Você diz que ela deve ser lida com mais força, com mais intensidade. Já com o elemento B (bold) você apenas marca em negrito o texto.-->
+        <!--Com o passar do tempo, é comum que o HTML só aceite as tags com sentido de SIGNIFICADO (com semântica), e todas as outras iguais para FORMA (não semântico) precisam ser configuradas por meio do CSS-->
+    </p>
+    <h3>Itálico</h3>
+    <p>
+        teste de <em>itálico usando 'em'</em>
+        <br>
+        teste de <i>itálico usando 'i'</i> (não semântico)
+        <!--Segue a mesma lógica, EM (emphasis) é usado para dar um significado e I (italic) para apenas uso de modelagem, como uma palavra estrangeira, pensamentos de um personagem etc.
+        -->
+    </p>
+    <h3>Tachado / Rasurado</h3>
+    <p>
+        teste de <del> riscado usando 'del'</del>
+        <!-- del (deleted/texto deletado)-->
+    </p>
+    <h3>Sublinhado</h3>
+    <p>
+        teste de <ins> sublinhado usando 'ins'</ins>
+        <!-- ins (inserted text/texto inserido) -->
+        <br>
+        teste de <u>sublinhado usando 'u'</u> (não semântico)
+        <!-- u (underlined) -->
+    </p>
+    <h3>Marcação</h3>
+    <p>
+        teste de <mark> texto marcado com 'mark'</mark>
+        <br>
+        teste de <mark style="background-color: lime;"> texto marcado em verde</mark> com 'mark style='
+    </p>
+    <h3>Texto sobrescrito e subscrito</h3>
+    <p>
+        teste X<sup>3</sup> usando 'sub'
+        <br>
+        teste H<sub>2</sub> usando 'sup'
+        <br>
+    </p>
+    <h3>Texto pequeno</h3>
+    <p>
+        texto <small>pequeno com 'small'</small>
+    </p>
+    <h3>Código</h3>
+    <p>
+        inserir código com 'code'
+        <br>
+        <code>
+            public class Classe {
+                public static void main(String[] args) {
+                    System.out.println("");
+                }
+            }
+        </code>
+        <p>
+            inserir código com 'pre' + 'code'
+            <pre>
+                <code>
+public class Classe {
+    public static void main(String[] args) {
+        System.out.println("");
+    }
+}
+                </code>
+            </pre>
+            <!--Somente com code, o texto fica bruto sem quebras de linha.-->
+        </p>
+    </p>
+    <h3>Citação</h3>
+    <p>
+        <q>citação com 'q'</q>
+        <!--q vem de quote/citar-->
+        <blockquote>bloco de citação <br> teste de quebra de linha
+        </blockquote>
+    </p>
+    <h3>Texto alt para abreviações</h3>
+    <p>Teste de abreviações: 
+        <abbr title="Hyper Text Markup Language">HTML</abbr>
+        (passar o mouse por cima da sigla).
+    </p>
+    <h3>Texto invertido</h3>
+    <p>
+        Texto invertido <bdo dir="rtl">"Texto invertido"</bdo> usando 'bdo'.
+        <!--bdo (bi-direcional override). os valores do parâmetro podem ser rtl (right-to-left) ou ltr (left-to-right)-->
+    </p>
+    <h3>Listas Ordenadas</h3>
+    <p>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3
+            <li>Item 4
+        </ol>
+        <!--'ol' (ordened list), 'il' (list item)-->
+        <ol type="A">
+            <li>Lista ordenada</li>
+            <li>Tipo letras maiúsculas</li>
+        </ol>
+        <ol type="i">
+            <li>Lista ordenada</li>
+            <li>Tipo numeros romanos minúsculos</li>
+            <!--type 1, A, a, I, i-->
+        </ol>
+        <ol type="I" start="5">
+            <li>Lista ordenada</li>
+            <li>Começando pelo 5° tópico</li>
+            <li>Usando o parâmetro 'start'</li>
+        </ol>
+    </p>
+    <h3>Listas não Ordenadas</h3>
+    <p>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <!--'ul' unorderned list-->
+        </ul>
+        <ul type="circle">
+            <li>Lista não ordenada</li>
+            <li>Tipo circle</li>
+        </ul>
+        <ul type="square">
+            <li>Lista não ordenada</li>
+            <li>Tipo square</li>
+        </ul>
+    </p>
+    <h3>Subtópicos de Listas</h3>
+    <p>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <ol type="i">
+                <li>Subitem 1</li>
+                <li>Subitem 2</li>
+            </ol>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <ul>
+                <li>Subitem 1</li>
+                <li>Subitem 2</li>
+                <ul>
+                    <li>Subitem 2.1</li>
+                    <li>Subitem 2.2</li>
+                </ul>
+                <li>Subitem 3</li>
+            </ul>
+            <li>Item 5</li>
+        </ol>
+    </p>
+    <h3>Lista de Definições</h3>
+    <p>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Linguagem de marcação utilizada para criar o conteúdo de sites.</dd>
+
+            <dt>CSS</dt>
+            <dd>Linguagem de marcação para a especificação de estilos em sites.</dd>
+
+            <dt>JavaScript</dt>
+            <dd>Linguagem de programação para criar interatividade em sites.</dd>
+            <!--'dl' (definition list), 'dt' (definition term), 'dd' (definition description)-->
+            <!--Usar essas tags facilitam a indexação por buscadores web-->
+        </dl>
+    </p>
+</body> 
+</html>
