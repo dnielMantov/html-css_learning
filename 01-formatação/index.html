@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <!-- Usa-se o seguinte código acima para adicionar um ícone a uma página. -->
+    <!-- 'rel' (reletionship) a relação que a URL referenciada tem em relação ao documento atual,
+           'href' (hypertext reference), 'type' (tipo) o tipo do conteúdo linkado. -->
     <title>Parágrafos</title>
 </head>
 <body>
@@ -192,6 +194,35 @@ public class Classe {
             <!--'dl' (definition list), 'dt' (definition term), 'dd' (definition description)-->
             <!--Usar essas tags facilitam a indexação por buscadores web-->
         </dl>
+    </p>
+    <h3>Links externos</h3>
+    <p>
+        Link para o <a href="https://youtube.com">YouTube</a> (abre na mesma guia)
+        <!--'a' (anchor/âncora) âncora é um link clicável, também chamado de hyperlink,
+              'href' (hypertext reference)-->
+        <br>
+        Link para o <a href="https://youtube.com" target="_blank" rel="external">YouTube</a> (abre em outra guia)
+        <!-- 'target' (alvo) define onde o link deve ser aberto ['_blank' em uma nova guia,
+            '_self' ou sem nada para a mesa guia]
+            'rel' (reletionship) a relação que a URL referenciada tem em relação ao documento atual
+            
+            Pode ser adicionado o parâmetro 'hreflan="en" depois de 'href', para indicar aos navegadores
+            e buscadores qual o idioma da próxima URL. Também ajuda os navegadores a traduzir a página.-->
+        <br>
+            Link para o <a href="https://youtube.com" target="_blank" rel="nofollow">YouTube</a> (abre em outra guia com nofollow)
+        <!--nofollow diz ao buscador para não indexar em pesquisas a seguinte URL-->
+    </p>
+    <p>
+        É usual usar links que abrem em outra guia para abrir <strong>outros sites</strong>
+        <br>
+        e links que abrem na mesma guia para conteúdos do <strong>mesmo site</strong>.
+    </p>
+    <h3> Links Internos </h3>
+    <p>
+        Link para acessar a <a href="pag002.html" target="_self" rel="next">segunda página do site</a>.
+        <!--Importante colocar informações no 'rel' para informar aos buscadores o que cada URL significa-->
+        Link para acessar a <a href="noticias/pag_noticias.html" target="_self" rel="next">página de notícias</a>.
+        
     </p>
 </body> 
 </html>
