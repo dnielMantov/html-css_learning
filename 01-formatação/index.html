@@ -8,7 +8,7 @@
     <!-- Usa-se o seguinte código acima para adicionar um ícone a uma página. -->
     <!-- 'rel' (reletionship) a relação que a URL referenciada tem em relação ao documento atual,
            'href' (hypertext reference), 'type' (tipo) o tipo do conteúdo linkado. -->
-    <title>Parágrafos</title>
+    <title> Formatação </title>
 </head>
 <body>
     <h1> Formatações de Texto </h1> 
@@ -103,7 +103,10 @@ public class Classe {
     <p>
         <q>citação com 'q'</q>
         <!--q vem de quote/citar-->
-        <blockquote>bloco de citação <br> teste de quebra de linha
+        <blockquote>
+            bloco de citação
+            <br>
+            teste de quebra de linha
         </blockquote>
     </p>
     <h3>Texto alt para abreviações</h3>
@@ -202,12 +205,11 @@ public class Classe {
               'href' (hypertext reference)-->
         <br>
         Link para o <a href="https://youtube.com" target="_blank" rel="external">YouTube</a> (abre em outra guia)
-        <!-- 'target' (alvo) define onde o link deve ser aberto ['_blank' em uma nova guia,
-            '_self' ou sem nada para a mesa guia]
-            'rel' (reletionship) a relação que a URL referenciada tem em relação ao documento atual
-            
-            Pode ser adicionado o parâmetro 'hreflan="en" depois de 'href', para indicar aos navegadores
-            e buscadores qual o idioma da próxima URL. Também ajuda os navegadores a traduzir a página.-->
+        <!-- 'target' (alvo) define onde o link deve ser aberto ['_blank' em uma nova guia, '_self' ou sem nada para a mesa guia].
+        'rel' (reletionship) a relação que a URL referenciada tem em relação ao documento atual
+        
+        Pode ser adicionado o parâmetro 'hreflan="en" depois de 'href', para indicar aos navegadores
+        e buscadores qual o idioma da próxima URL. Também ajuda os navegadores a traduzir a página.-->
         <br>
             Link para o <a href="https://youtube.com" target="_blank" rel="nofollow">YouTube</a> (abre em outra guia com nofollow)
         <!--nofollow diz ao buscador para não indexar em pesquisas a seguinte URL-->
@@ -221,10 +223,11 @@ public class Classe {
     <p>
         Link para acessar a <a href="pag002.html" target="_self" rel="next">segunda página do site</a>.
         <!--Importante colocar informações no 'rel' para informar aos buscadores o que cada URL significa-->
+        <br>
         Link para acessar a <a href="noticias/pag_noticias.html" target="_self" rel="next">página de notícias</a>.
     </p>
     <h3>Download de Arquivos</h1>
-    <p> 
+    <p> Baixe aqui o <a href="download/png2pdf.zip">PDF</a> do livro.
 
     </p>
 </body> 
