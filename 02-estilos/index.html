@@ -7,6 +7,39 @@
     <title> Estilos </title>
 </head>
 <body>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione itaque exercitationem, veniam illum nemo laudantium quisquam alias sequi omnis ullam quia adipisci eos aut eum consequuntur aliquid assumenda obcaecati iste.
+    </p>
+    <h1>Imagens Dinâmicas</h1>
+    <hr>
+    <picture>
+        <source media="(min-width: 1050px)" srcset="images/foto-g.png" type="image/png">
+        <!--Quando o tamanho da janela for maior ou igual a 1050 pixels, carregue a imagem-->
     
+        <source media="(min-width: 750px)" srcset="images/foto-m.png" type="image/png">
+        <!--Quando o tamanho da janela for maior ou igual a 750 pixels, carregue a imagem-->
+    
+        <img src="images/foto-p.png" alt="Imagem flexível">
+        <!--A imagem carregada por padrão, para valores menores que o definido pela linha anterior-->
+    </picture>
+
+    <h1>Áudios</h1>
+
+    <audio preload="" controls loop>
+        <source src="audios/happy-mistake.mp3" type="audio/mpeg">
+    </audio>
+
+    <!--Também pode ser inserido de maneira direta <audio src=""></audio>-->
+    <!--tag 'controls' mostra os controles de midia e 'loop' ficar sempre reproduzindo-->
+
+    <p>Seu navegador não suporta áudio, faça o <a href="audios/happy-mistake.mp3" download="happy-mistake.mp3" type="audio/mpeg">download</a> do arquivo MP3</p>
+
+    <h1>Vídeos</h1>
+
+    <video src="videos/meu-video.mp4" controls width="500" poster="images/limoes-capa.png"></video>
+
+    <!--tag 'poster' para o poster do vídeo e 'width' para as dimensões do vídeo-->
+
+    <!--Também pode seguir o mesmo modelo de sources em audio e imagens. Esse modelo pode ter várias sources com formatos de vídeos diferentes, caso o navegador não consiga reproduzir um formato, automaticamente tenta reproduzir o formato seguinte da linha abaixo-->
 </body>
 </html>
