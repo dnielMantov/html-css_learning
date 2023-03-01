@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to left, #D9C8B4, #8C5637);
+    /* gradiente */
+}
+
+main {
+    background-color: white;
+    
+    border-radius: 10px;
+    /* arredendamento da borda */
+
+    box-shadow: -5px 5px 15px #400d0169;
+    /* sombra do bloco.
+    1° parâmetro: quanto a sombra vai andar para o lado
+    2° parâmetro: quanto a sombra vai andar para baixo
+    3° parâmetro: quanto a sombra vai espalhar
+    4° parâmetro: cor da sombra */
+
+    width: 600px;
+    /* largura */
+
+    padding: 20px;
+    /* marge do texto e final do bloco */
+
+    margin: auto;
+    /* centraliza o bloco na tela independente do tam. da 
+    janela */
+}
+
+h1 {
+    color: #400D01;
+    text-align: center;
+    text-shadow: 1px 1px 2px #27080062;
+}
+
+h2 {
+    color: #683f27;
+}
+
+p {
+    text-align: justify;
+}
