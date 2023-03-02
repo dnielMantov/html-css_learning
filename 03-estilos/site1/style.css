@@ -1,12 +1,28 @@
 @charset "UTF-8";
 
+/* Abaixo, '*' é usado para configurar os estilos globais */
 * {
     font-family: Arial, Helvetica, sans-serif;
+    /* As duas primeiras são nomes de fontes e a última é uma fonte não serifada qualquer (genérica) */
 }
 
 body {
     background-image: linear-gradient(to left, #D9C8B4, #8C5637);
     /* gradiente */
+
+    font-size: 16px;
+    /*
+    Medidas Absolutas
+    cm, mm, in, px, pt, pc
+    (centimetro, milimetro, polegada, pixel, ponto, paica)
+    
+    Medidas Relativas
+    em, ex, vw, vh, %
+    (relativo ao tamanho M da fonte, relativo ao tamanho X, view width, view height)
+
+    tamanho padrão nos navegadores é 16px
+    1em equivale a 16px
+    */
 }
 
 main {
@@ -33,10 +49,28 @@ main {
     janela */
 }
 
-h1 {
+/* usando o id para especificar o elemento */
+h1#principal {
     color: #400D01;
     text-align: center;
     text-shadow: 1px 1px 2px #27080062;
+
+    /* 
+    shorthand font (encurtamento de código)
+    font: font-style -> font-weight -> font-size -> font-family
+
+    font-family: Arial;
+    font-weight: bolder;
+    font-size: 3em;
+    font-style: italic;
+    */
+    font: italic bolder 3em Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 32px;
+    color: #976241;
+    text-shadow: -1px 1px 2px #352014;
 }
 
 h2 {
@@ -45,4 +79,6 @@ h2 {
 
 p {
     text-align: justify;
+    text-indent: 20px;
+    /* espaçamento do inicio do parágrafo */
 }
