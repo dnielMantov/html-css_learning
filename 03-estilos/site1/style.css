@@ -77,6 +77,21 @@ h2 {
     color: #683f27;
 }
 
+/* uso de classes */
+.basico {
+    text-decoration: underline;
+}
+
+.avancado {
+    text-decoration-line: overline;
+}
+
+.destaque {
+    color: rgb(0, 0, 0);
+    background-color: rgba(184, 135, 11, 0.486);
+    
+}
+
 p {
     text-align: justify;
     text-indent: 20px;

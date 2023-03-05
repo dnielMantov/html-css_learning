@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Uso de div e derivados </title>
+    <style>
+        div {
+            background-color: cadetblue;
+            border: 1px solid black;
+            display: inline-block;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+
+        /* para todos os paragrafos dentro de div */
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: contents;
+        }
+
+        /* uso de pseudoclasses */
+        /* pseudoclasse 'hover' ativa funções para quando passar o mouse por cima */
+        div:hover {
+            background-color: chocolate;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div>01</div>
+    <div>
+        02
+        <p>
+            Texto Oculto
+        </p>
+    </div>
+    <div>03</div>
+</body>
+</html>
