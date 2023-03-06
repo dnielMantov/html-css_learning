@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Uso de div e derivados </title>
     <style>
+        body {
+            font: bolder 1.5em arial;
+        }
+
         div {
             background-color: cadetblue;
             border: 1px solid black;
@@ -15,7 +19,7 @@
             width: 200px;
         }
 
-        /* para todos os paragrafos dentro de div */
+        /* 'p' é children de 'div' */
         div > p {
             display: none;
         }
@@ -24,11 +28,30 @@
             display: contents;
         }
 
-        /* uso de pseudoclasses */
         /* pseudoclasse 'hover' ativa funções para quando passar o mouse por cima */
         div:hover {
             background-color: chocolate;
 
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+        }
+
+        /* links já visitados */
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            color: rgb(0, 0, 0);
+            text-decoration: underline;
+        }
+
+        /* quando é clicado */
+        a:active {
+            background-color: green;
         }
 
     </style>
@@ -42,5 +65,11 @@
         </p>
     </div>
     <div>03</div>
+
+    <ul>
+        <li>Respositório <a href="https://github.com/dnlMantov" target="_blank">GitHub</a></li>
+        
+        <li>Canal do <a href="https://www.utube.com/" target="_blank">YouTube</a></li>
+    </ul>
 </body>
 </html>
