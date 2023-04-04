@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(215, 236, 255);
+}
+
+h1 {
+    background-color: lightgray;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+
+    /* 
+    border-width: 10px;
+    border-style: outset;
+    border-color: grey;
+     */
+
+    border: 10px grey outset;
+
+    padding: 10px 10px 10px 10px;   /*  ou padding: 10px  */
+    /* sentido horário: cima, direita, baixo, esquerda
+    se todas as medidas forem iguais, pode colocar só uma*/
+
+    margin: 47px auto;
+    /* cima e baixo com 47px, direita e esquerda auto */
+    
+    /* linha ao redor da borda */
+    outline: 5px brown dashed;
+}
+
+.inline {
+    border: solid 5px rebeccapurple;
+    padding: 2px 2px 2px 2px;
+}
